@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="collectionCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="321"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="321"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etV-vC-BTA">
+                        <rect key="frame" x="0.0" y="210" width="332" height="20.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mSN-nd-Ed9">
+                        <rect key="frame" x="66" y="0.0" width="200" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="D3O-TY-y3W"/>
+                            <constraint firstAttribute="width" constant="200" id="xv1-Da-9TE"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mSN-nd-Ed9" firstAttribute="centerX" secondItem="etV-vC-BTA" secondAttribute="centerX" id="2JK-89-dFh"/>
+                <constraint firstItem="etV-vC-BTA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7rZ-o8-oob"/>
+                <constraint firstItem="mSN-nd-Ed9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Byj-N2-SEu"/>
+                <constraint firstItem="etV-vC-BTA" firstAttribute="top" secondItem="mSN-nd-Ed9" secondAttribute="bottom" constant="10" id="TYC-DU-g4u"/>
+                <constraint firstAttribute="trailing" secondItem="etV-vC-BTA" secondAttribute="trailing" id="or2-qt-Utx"/>
+            </constraints>
+            <size key="customSize" width="332" height="321"/>
+            <connections>
+                <outlet property="myImageView" destination="mSN-nd-Ed9" id="nOC-uF-CB8"/>
+                <outlet property="myLabel" destination="etV-vC-BTA" id="Bus-F4-khM"/>
+            </connections>
+            <point key="canvasLocation" x="114.50381679389312" y="115.14084507042254"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
